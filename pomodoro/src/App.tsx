@@ -1,21 +1,38 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/theme.css';
 import './styles/global.css';
+
+// Importando seus componentes
+import Notfound from './components/NotFound'; 
 import Heading from './components/Heading';
 import { TimerIcon } from 'lucide-react';
+import Botoes from './components/botoes';
 
 
-export default function Card() {
+const Home = () => (
+    <>
+        <Heading>
+            PecasPomo
+            <button> <TimerIcon /> </button>
+        </Heading>
+
+        
+    </>
+);
+
+export default function App() {
     return (
+        <BrowserRouter>
+            <Routes>
+                {/* Rota da sua página principal */}
+                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Botoes />}
 
-        <>
-            <Heading>
-                PecasPomo
-                 <button> <TimerIcon /> </button>
-            </Heading>
-              
-            <p>LoremLorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam inventore nisi eos tenetur qui vitae commodi porro unde accusamus, eaque repellendus quasi, explicabo facere assumenda. Fugiat hic quos laboriosam reiciendis!</p>
-
-            </>
-    )
+                {/* Aqui entra o seu componente Notfound! 
+                    O path="*" captura qualquer link que não seja o "/"
+                */},
+                <Route path="*" element={<Notfound />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
-
