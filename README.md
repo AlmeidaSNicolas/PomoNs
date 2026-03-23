@@ -4,7 +4,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-Um sofisticado Timer de Pomodoro focado em gestão de tempo e produtividade. Desenvolvido para aplicar e solidificar conceitos avançados de React, TypeScript e componentização, baseado nos ensinamentos do curso de React JS do professor Luiz Otávio Miranda.
+Um sofisticado Timer de Pomodoro focado em gestão de tempo e produtividade. Desenvolvido para aplicar e solidificar conceitos avançados de React, TypeScript e componentização.
 
 🚀 Tecnologias e Ferramentas
 Este projeto foi construído utilizando as seguintes tecnologias do ecossistema moderno de front-end:
